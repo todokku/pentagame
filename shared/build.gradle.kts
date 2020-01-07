@@ -93,12 +93,6 @@ kotlin {
                 api("org.reduxkotlin:redux-kotlin:0.2.9")
                 api("org.reduxkotlin:redux-kotlin-reselect-metadata:0.2.9")
 
-
-
-
-                // TODO: remove
-                api("com.lightningkite:kommon-metadata:${Kommon.version}")
-                api("com.lightningkite:reacktive-metadata:${Reacktive.version}")
             }
 
             kotlin.srcDirs(genCommonSrcKt.path)
@@ -143,11 +137,6 @@ kotlin {
                 api("org.reduxkotlin:redux-kotlin-jvm:0.2.9")
                 api("org.reduxkotlin:redux-kotlin-reselect-jvm:0.2.9")
 
-
-                // krosslin
-                api("com.lightningkite:kommon-jvm:${Kommon.version}")
-                api("com.lightningkite:reacktive-jvm:${Reacktive.version}")
-
                 // mongodb
 //                    implementation("org.litote.kmongo:kmongo-serialization:3.11.1")
                 api("org.litote.kmongo:kmongo-coroutine-serialization:3.11.1")
@@ -174,14 +163,6 @@ kotlin {
                 }
                 api(org.gradle.kotlin.dsl.ktor("client-core"))
                 api(org.gradle.kotlin.dsl.ktor("client-json"))
-
-
-                // TODO: remove
-                api("com.lightningkite:kommon-metadata:${Kommon.version}")
-                api("com.lightningkite:reacktive-metadata:${Reacktive.version}")
-                api("com.lightningkite:recktangle-metadata:${Recktangle.version}")
-//                api("com.lightningkite:lokalize-metadata:${Lokalize.version}")
-                api("com.lightningkite:koolui-metadata:${KoolUI.version}")
 
 //                api(ktor("client-websocket"))
             }
@@ -214,15 +195,6 @@ kotlin {
                 api(ktor("client-core-js"))
                 api(ktor("client-json-js"))
                 api(ktor("client-serialization-js"))
-
-                // krosslin
-                // TODO: remove
-                api("com.lightningkite:kommon-js:${Kommon.version}")
-                api("com.lightningkite:reacktive-js:${Reacktive.version}")
-                api("com.lightningkite:recktangle-js:${Recktangle.version}")
-//                    implementation("com.lightningkite:lokalize-js:${Lokalize.version}")
-                api("com.lightningkite:koolui-js:${KoolUI.version}")
-
 
                 api(npm("react", "^16.9.0"))
                 api(npm("react-dom", "^16.9.0"))
