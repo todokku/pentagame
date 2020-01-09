@@ -206,7 +206,7 @@ kotlin {
                 api(npm("redux", "^4.0.0"))
                 api(npm("react-redux", "^5.0.7"))
 
-                val kotlinWrappersVersion = "pre.88-kotlin-1.3.60"
+                val kotlinWrappersVersion = "pre.89-kotlin-1.3.60"
                 api("org.jetbrains:kotlin-react:16.9.0-${kotlinWrappersVersion}")
                 api("org.jetbrains:kotlin-react-dom:16.9.0-${kotlinWrappersVersion}")
 //                api("org.jetbrains:kotlin-react-router-dom:4.3.1-${kotlinWrappersVersion}")
